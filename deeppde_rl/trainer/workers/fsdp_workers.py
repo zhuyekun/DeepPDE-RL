@@ -26,3 +26,6 @@ def get_sharding_strategy(device_mesh):
     else:
         raise NotImplementedError(f"Get device mesh ndim={device_mesh.ndim}, but only support 1 or 2")
     return sharding_strategy
+
+class ActorRolloutRefWorker(Worker):
+    pass
