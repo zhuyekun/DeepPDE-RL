@@ -1,3 +1,17 @@
 reward_function:
   path: /workspaces/DeepPDE-RL/deeppde_rl/trainer/utils/pinn_loss.py
   name: pinn_loss
+
+
+actor_rollout_ref:
+  model:
+    path: None
+  actor:
+    strategy: fsdp
+
+critic:
+  strategy: fsdp
+
+
+
+
